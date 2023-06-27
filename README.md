@@ -33,3 +33,6 @@
 
 
 <img width="1920" alt="CafeWebsite5" src="https://github.com/AlpSagdic/Cafes_Website/assets/125905845/a3f04442-1452-4abf-a31c-f97db851410f">
+
+
+<img width="1920" alt="CafeWebsite6" src="https://github.com/AlpSagdic/Cafes_Website/assets/125905845/3b605e51-6a59-4f88-a5cd-4f5d0bb67bf4">
