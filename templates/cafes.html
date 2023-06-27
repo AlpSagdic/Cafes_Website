@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Worldwide Cafes</title>
+</head>
+<body>
+    {% include "header.html" %}
+
+    {% for cafe in all_cafes %}
+    <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="{{ cafe.img_url }}" alt="">
+            <div class="card-body">
+              <p class="card-text">
+                  <h1>{{ cafe.name }}<br></h1>
+                  Location: {{ cafe.location }}<br>
+                  Wifi: {{ cafe.has_wifi }}<br>
+                  Wc: {{ cafe.has_wc }}<br>
+                  Sockets: {{ cafe.has_sockets }}
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="{{ cafe.cafe_url }}">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Cafe</button>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+              <img src="{{ cafe.img_url }}" alt="">
+            <div class="card-body">
+                <p class="card-text">
+                  <h1>{{ cafe.name }}<br></h1>
+                  Location: {{ cafe.location }}<br>
+                  Wifi: {{ cafe.has_wifi }}<br>
+                  Wc: {{ cafe.has_wc }}<br>
+                  Sockets: {{ cafe.has_sockets }}
+                </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="{{ cafe.cafe_url }}">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Cafe</button>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+              <img src="{{ cafe.img_url }}" alt="">
+            <div class="card-body">
+              <p class="card-text">
+                  <h1>{{ cafe.name }}<br></h1>
+                  Location: {{ cafe.location }}<br>
+                  Wifi: {{ cafe.has_wifi }}<br>
+                  Wc: {{ cafe.has_wc }}<br>
+                  Sockets: {{ cafe.has_sockets }}
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="{{ cafe.cafe_url }}">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Cafe</button>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    </div>
+
+{% endfor %}
+{% include "footer.html" %}
+
+
+</body>
+</html>
+
